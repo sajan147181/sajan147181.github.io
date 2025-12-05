@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Landing Page</title>
+  <title>Adventure Forum</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header__inner">
-      <a href="#" class="logo">MyBrand</a>
+      <h1 class="logo">Adventure Forum</h1>
       <nav class="nav">
+        <a href="#about">About</a>
         <a href="#features">Features</a>
-        <a href="#services">Services</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact" class="btn btn--primary">Get Started</a>
+        <a href="#community">Community</a>
+        <a href="#join" class="btn btn--primary">Join Now</a>
       </nav>
     </div>
   </header>
@@ -24,92 +24,84 @@
   <!-- Hero -->
   <section class="hero">
     <div class="container hero__inner">
-      <h1>Build Your Future With Us</h1>
-      <p>We simplify your journey with modern solutions and expert guidance.</p>
-      <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary">Start Now</a>
-        <a href="#services" class="btn btn--ghost">Learn More</a>
-      </div>
-      <img src="https://via.placeholder.com/800x400" alt="Hero image" class="hero__image">
+      <h2>Adventure Awaits — Connect With Fellow Explorers</h2>
+      <p>Join a vibrant community of travelers and outdoor lovers. Share stories, plan trips, and discover new adventures together.</p>
+      <a href="#join" class="btn btn--primary">Get Started</a>
+      <img src="https://via.placeholder.com/900x400" alt="Travel community" class="hero__image">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We believe travel is better when shared. Our forum connects like‑minded explorers to exchange tips, stories, and inspiration for the next big adventure.</p>
     </div>
   </section>
 
   <!-- Features -->
   <section id="features" class="features">
     <div class="container">
-      <h2>Why Choose Us</h2>
+      <h2>Forum Features</h2>
       <div class="grid">
         <div class="card">
           <img src="https://via.placeholder.com/150" alt="">
-          <h3>Fast</h3>
-          <p>Quick solutions tailored to your needs.</p>
+          <h3>Discussion Boards</h3>
+          <p>Talk about destinations, gear, and experiences.</p>
         </div>
         <div class="card">
           <img src="https://via.placeholder.com/150" alt="">
-          <h3>Reliable</h3>
-          <p>Trusted by hundreds of clients worldwide.</p>
+          <h3>Trip Planning</h3>
+          <p>Collaborate on itineraries and group adventures.</p>
         </div>
         <div class="card">
           <img src="https://via.placeholder.com/150" alt="">
-          <h3>Supportive</h3>
-          <p>We’re here for you every step of the way.</p>
+          <h3>Photo Sharing</h3>
+          <p>Showcase your journeys and inspire others.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="">
+          <h3>Meetups</h3>
+          <p>Find local explorers and join outdoor events.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="services">
+  <!-- Community -->
+  <section id="community" class="community">
     <div class="container">
-      <h2>Our Services</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Consulting</h3>
-          <p>Expert advice to guide your decisions.</p>
-        </div>
-        <div class="card">
-          <h3>Strategy</h3>
-          <p>Tailored plans for sustainable growth.</p>
-        </div>
-        <div class="card">
-          <h3>Implementation</h3>
-          <p>Hands-on support to bring ideas to life.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
+      <h2>Community Highlights</h2>
       <blockquote>
-        <p>"This team transformed our business. Highly recommended!"</p>
-        <cite>- Happy Client</cite>
+        <p>"I found my hiking buddies here — every weekend is an adventure!"</p>
+        <cite>- Alex, Member</cite>
       </blockquote>
       <blockquote>
-        <p>"Professional, efficient, and supportive throughout."</p>
-        <cite>- Another Client</cite>
+        <p>"The forum helped me plan my dream trip to Patagonia."</p>
+        <cite>- Priya, Member</cite>
       </blockquote>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="contact" class="cta">
+  <!-- Join -->
+  <section id="join" class="cta">
     <div class="container">
-      <h2>Ready to get started?</h2>
-      <p>Join us today and build your future.</p>
-      <a href="#" class="btn btn--primary">Contact Us</a>
+      <h2>Ready to Explore Together?</h2>
+      <p>Sign up today and start your journey with us.</p>
+      <form class="signup-form">
+        <input type="email" placeholder="Your email" required />
+        <button type="submit" class="btn btn--primary">Join Now</button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> MyBrand. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Adventure Forum. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="main.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
